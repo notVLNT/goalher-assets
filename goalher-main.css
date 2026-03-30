@@ -36,7 +36,7 @@
   16.  SMART SCROLL
    17.  MOBILE (`@media (max-width: 960px)`)
    18.  DESKTOP (`@media (min-width: 961px)`)
-   19.  BREADCRUMBS + TOPIC-ACTIONS (+ AddThis)
+   19.  BREADCRUMBS + TOPIC-ACTIONS
    ============================================================ */
 
 /* ============================================================
@@ -2223,4 +2223,42 @@ body.darkmode #plus_menu a {
 body.darkmode #plus_menu a:hover {
   background-color: rgba(199, 125, 255, .15);
   color: #C77DFF;
+}
+
+/* AddThis toolbar */
+#addthis-toolbar .btn-floating-left {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .5px !important;
+  color: var(--accent) !important;
+  text-decoration: none !important;
+  padding: 2px 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  cursor: pointer !important;
+  transition: color .2s ease, border-color .2s ease !important;
+  border-bottom: 1px solid transparent !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  line-height: 1 !important;
+}
+
+#addthis-toolbar .btn-floating-left:hover {
+  color: var(--accent-soft) !important;
+  border-bottom-color: var(--accent-soft) !important;
+}
+
+body.darkmode #addthis-toolbar .btn-floating-left {
+  color: rgba(224, 216, 255, .7) !important;
+}
+
+body.darkmode #addthis-toolbar .btn-floating-left:hover {
+  color: var(--accent-soft) !important;
+  border-bottom-color: var(--accent-soft) !important;
 }
