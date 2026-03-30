@@ -1,0 +1,23 @@
+body {
+  background-color: #1a0030 !important;
+  color: #e0d8ff !important;
+}
+
+body * {
+  color: #e0d8ff;
+}
+
+a {
+  color: #C77DFF !important;
+}
+
+blockquote {
+  background-color: #2d0050 !important;
+  border-color: rgba(199,125,255,0.3) !important;
+  color: #e0d8ff !important;
+}
+
+code {
+  background-color: #240046 !important;
+  color: #e0d8ff !important;
+}
