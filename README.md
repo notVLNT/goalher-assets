@@ -1,3 +1,3 @@
 # goalher-assets
 
-Tema personalizzato per GoalHer Forum ([goalher.forumattivo.com](https://goalher.forumattivo.com)).
+Foglio CSS personalizzato e funzioni utili per GoalHer Forum ([goalher.forumattivo.com](https://goalher.forumattivo.com)).  
