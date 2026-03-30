@@ -2057,37 +2057,41 @@ body.darkmode #breadcrumbs a + a::before {
 
 
 .topic-actions,
-.topic-actions-buttons,
+.topic-actions-buttons {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin: 4px 0 8px !important;
+  padding: 2px 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  flex-wrap: wrap !important;
+}
+
+/* AddThis: non usare display:flex sul wrapper — rompe il layout interno del widget */
 .topic-actions #addthis-toolbar {
-  display: flex !important;
-  align-items: center !important;
-  gap: 12px !important;
-  margin: 4px 0 8px !important;
-  padding: 2px 0 !important;
+  flex: 0 0 auto !important;
+  align-self: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  flex-wrap: wrap !important;
 }
 
-/* AddThis fuori da .topic-actions: allinea alla stessa riga se subito dopo */
 .topic-actions + #addthis-toolbar {
-  display: flex !important;
-  align-items: center !important;
-  flex-wrap: wrap !important;
-  gap: 12px !important;
   margin: 4px 0 8px !important;
-  padding: 2px 0 !important;
+  padding: 0 !important;
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
 }
 
-/* Link azioni topic + AddThis (stesso look) */
+/* Link azioni topic */
 .topic-actions-buttons > a,
 .topic-actions-buttons a.mark-read-button,
-.topic-actions-buttons .plus-menu-wrap > a,
-#addthis-toolbar .btn-floating-left {
+.topic-actions-buttons .plus-menu-wrap > a {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 12px !important;
   font-weight: 600;
@@ -2112,8 +2116,7 @@ body.darkmode #breadcrumbs a + a::before {
 
 .topic-actions-buttons > a:hover,
 .topic-actions-buttons a.mark-read-button:hover,
-.topic-actions-buttons .plus-menu-wrap > a:hover,
-#addthis-toolbar .btn-floating-left:hover {
+.topic-actions-buttons .plus-menu-wrap > a:hover {
   color: #C77DFF !important;
   border-bottom-color: #C77DFF;
 }
@@ -2191,18 +2194,16 @@ body.darkmode #breadcrumbs a + a::before {
   line-height: 1;
 }
 
-/* Topic-Actions + AddThis — Dark Mode */
+/* Topic-Actions — Dark Mode */
 body.darkmode .topic-actions-buttons > a,
 body.darkmode .topic-actions-buttons a.mark-read-button,
-body.darkmode .topic-actions-buttons .plus-menu-wrap > a,
-body.darkmode #addthis-toolbar .btn-floating-left {
+body.darkmode .topic-actions-buttons .plus-menu-wrap > a {
   color: rgba(224, 216, 255, .7) !important;
 }
 
 body.darkmode .topic-actions-buttons > a:hover,
 body.darkmode .topic-actions-buttons a.mark-read-button:hover,
-body.darkmode .topic-actions-buttons .plus-menu-wrap > a:hover,
-body.darkmode #addthis-toolbar .btn-floating-left:hover {
+body.darkmode .topic-actions-buttons .plus-menu-wrap > a:hover {
   color: #C77DFF !important;
   border-bottom-color: #C77DFF;
 }
@@ -2225,8 +2226,9 @@ body.darkmode #plus_menu a:hover {
   color: #C77DFF;
 }
 
-/* AddThis toolbar */
-#addthis-toolbar .btn-floating-left {
+/* AddThis: specificità alta + solo sul trigger (a o .btn-floating-left), dopo CSS forum/AddThis */
+html body #addthis-toolbar a.btn-floating-left,
+html body #addthis-toolbar .btn-floating-left {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 12px !important;
   font-weight: 600 !important;
@@ -2247,18 +2249,30 @@ body.darkmode #plus_menu a:hover {
   align-items: center !important;
   gap: 4px !important;
   line-height: 1 !important;
+  width: auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-width: none !important;
+  overflow: visible !important;
+  position: relative !important;
+  z-index: auto !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
 }
 
-#addthis-toolbar .btn-floating-left:hover {
+html body #addthis-toolbar a.btn-floating-left:hover,
+html body #addthis-toolbar .btn-floating-left:hover {
   color: var(--accent-soft) !important;
   border-bottom-color: var(--accent-soft) !important;
 }
 
-body.darkmode #addthis-toolbar .btn-floating-left {
+html body.darkmode #addthis-toolbar a.btn-floating-left,
+html body.darkmode #addthis-toolbar .btn-floating-left {
   color: rgba(224, 216, 255, .7) !important;
 }
 
-body.darkmode #addthis-toolbar .btn-floating-left:hover {
+html body.darkmode #addthis-toolbar a.btn-floating-left:hover,
+html body.darkmode #addthis-toolbar .btn-floating-left:hover {
   color: var(--accent-soft) !important;
   border-bottom-color: var(--accent-soft) !important;
 }
