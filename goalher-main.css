@@ -36,7 +36,7 @@
   16.  SMART SCROLL
    17.  MOBILE (`@media (max-width: 960px)`)
    18.  DESKTOP (`@media (min-width: 961px)`)
-   19.  BREADCRUMBS + TOPIC-ACTIONS
+   19.  BREADCRUMBS + TOPIC-ACTIONS (+ AddThis)
    ============================================================ */
 
 /* ============================================================
@@ -2057,7 +2057,8 @@ body.darkmode #breadcrumbs a + a::before {
 
 
 .topic-actions,
-.topic-actions-buttons {
+.topic-actions-buttons,
+.topic-actions #addthis-toolbar {
   display: flex !important;
   align-items: center !important;
   gap: 12px !important;
@@ -2069,9 +2070,24 @@ body.darkmode #breadcrumbs a + a::before {
   flex-wrap: wrap !important;
 }
 
+/* AddThis fuori da .topic-actions: allinea alla stessa riga se subito dopo */
+.topic-actions + #addthis-toolbar {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  margin: 4px 0 8px !important;
+  padding: 2px 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Link azioni topic + AddThis (stesso look) */
 .topic-actions-buttons > a,
 .topic-actions-buttons a.mark-read-button,
-.topic-actions-buttons .plus-menu-wrap > a {
+.topic-actions-buttons .plus-menu-wrap > a,
+#addthis-toolbar .btn-floating-left {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 12px !important;
   font-weight: 600;
@@ -2096,7 +2112,8 @@ body.darkmode #breadcrumbs a + a::before {
 
 .topic-actions-buttons > a:hover,
 .topic-actions-buttons a.mark-read-button:hover,
-.topic-actions-buttons .plus-menu-wrap > a:hover {
+.topic-actions-buttons .plus-menu-wrap > a:hover,
+#addthis-toolbar .btn-floating-left:hover {
   color: #C77DFF !important;
   border-bottom-color: #C77DFF;
 }
@@ -2174,16 +2191,18 @@ body.darkmode #breadcrumbs a + a::before {
   line-height: 1;
 }
 
-/* Topic-Actions — Dark Mode */
+/* Topic-Actions + AddThis — Dark Mode */
 body.darkmode .topic-actions-buttons > a,
 body.darkmode .topic-actions-buttons a.mark-read-button,
-body.darkmode .topic-actions-buttons .plus-menu-wrap > a {
+body.darkmode .topic-actions-buttons .plus-menu-wrap > a,
+body.darkmode #addthis-toolbar .btn-floating-left {
   color: rgba(224, 216, 255, .7) !important;
 }
 
 body.darkmode .topic-actions-buttons > a:hover,
 body.darkmode .topic-actions-buttons a.mark-read-button:hover,
-body.darkmode .topic-actions-buttons .plus-menu-wrap > a:hover {
+body.darkmode .topic-actions-buttons .plus-menu-wrap > a:hover,
+body.darkmode #addthis-toolbar .btn-floating-left:hover {
   color: #C77DFF !important;
   border-bottom-color: #C77DFF;
 }
