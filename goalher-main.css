@@ -5,8 +5,8 @@
    INDICE
    ──────────────────────────────────────────────────────────
    1.  VARIABILI & TOKEN
-   2.  DARK MODE TOGGLE (componente)
-   3.  DARK MODE (sovrascritture body.darkmode)
+   2.  DARK MODE TOGGLE
+   3.  DARK MODE (sovrascritture `body.darkmode`)
        3a. Layout e struttura
        3b. Sezioni forum & indice
        3c. Post & topic
@@ -16,27 +16,27 @@
        3g. Smart scroll
    4.  HEADER & BANNER
        4a. Header fisso
-       4b. Banner — logo CSS puro (gh-demo)
-   5.  MENU LATERALE (main-menu / navbar)
+       4b. Banner — logo CSS
+   5.  MENU LATERALE
    6.  INDICE FORUM
        6a. Intestazioni categorie
        6b. Sezioni con immagine
-       6c. Ultimo post in colonna
-       6d. HERO SECTION
-   7.  FORUM GENERALE (forum-header, sezioni, icone)
+       6c. Colonna ultimo post
+       6d. Hero section
+   7.  FORUM GENERALE
    8.  TOPIC & POST
-   9.  POST-ASIDE (autore)
+   9.  POST-ASIDE
   10.  PULSANTI
   11.  BLOCK / BOX / WIDGET
   12.  WIDGET NOTIZIE
-  13.  PROFILI (avanzati)
+   13.  PROFILI
        13e. Icone profilo (Material Icons)
   14.  VARIE (tabelle, sondaggi, misc)
   15.  FOOTER
   16.  SMART SCROLL
-  17.  MOBILE  @media (max-width: 960px)
-  18.  DESKTOP @media (min-width: 961px)
-  19.  BREADCRUMBS
+   17.  MOBILE (`@media (max-width: 960px)`)
+   18.  DESKTOP (`@media (min-width: 961px)`)
+   19.  BREADCRUMBS + TOPIC-ACTIONS
    ============================================================ */
 
 /* ============================================================
@@ -1480,7 +1480,7 @@ blockquote {
   margin-right: 4px;
 }
 
-/* Icona corona admin */
+/* Icona corona admin 
 .post-author-name.is-admin::before {
   content: "";
   display: inline-block;
@@ -1491,6 +1491,7 @@ blockquote {
   vertical-align: middle;
   margin-right: 2px;
 }
+  */
 
 
 /* ============================================================
