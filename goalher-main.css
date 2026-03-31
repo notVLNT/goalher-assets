@@ -2073,7 +2073,6 @@ body.darkmode #breadcrumbs a + a::before {
   align-items: center !important;
   gap: 12px !important;
   margin: 4px 0 8px !important;
-  padding: 2px 0 !important;
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
@@ -2082,7 +2081,6 @@ body.darkmode #breadcrumbs a + a::before {
 
 .topic-actions.bottom .topic-actions-buttons > a {
   line-height: 1 !important;
-  padding: 0 !important;
 }
 
 /* AddThis */
