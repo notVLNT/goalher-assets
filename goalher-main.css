@@ -1960,9 +1960,8 @@ footer {
 
 
 /* ============================================================
-   16. SMART SCROLL
-   ============================================================ */
-
+16. SMART SCROLL
+============================================================ */
 #smart-scroll {
   position: fixed;
   bottom: 25px;
@@ -1973,25 +1972,103 @@ footer {
   justify-content: center;
   width: 48px;
   height: 48px;
-  background-color: var(--accent-strong);
+  background: linear-gradient(
+      135deg, 
+      rgba(60, 9, 108, 0.75) 0%, 
+      rgba(36, 0, 70, 0.70) 100%
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  
   color: var(--text-on-dark);
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 
+      0 4px 12px rgba(0, 0, 0, 0.35),
+      0 0 0 1px rgba(199, 125, 255, 0.15),
+      0 0 20px rgba(199, 125, 255, 0.1);
+  
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
 
-#smart-scroll i.material-icons { font-size: 32px; transition: transform 0.3s ease; }
-
-#smart-scroll:hover {
-  background-color: var(--accent);
-  transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+#smart-scroll i.material-icons { 
+  font-size: 32px; 
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-#smart-scroll:active { transform: scale(0.92); }
+#smart-scroll:hover {
+  background: linear-gradient(
+      135deg, 
+      rgba(90, 24, 154, 0.82) 0%, 
+      rgba(60, 9, 108, 0.78) 100%
+  );
+  transform: translateY(-4px);
+  box-shadow: 
+      0 8px 20px rgba(0, 0, 0, 0.4),
+      0 0 0 1px rgba(199, 125, 255, 0.3),
+      0 0 30px rgba(199, 125, 255, 0.25);
+}
+
+#smart-scroll:hover i.material-icons {
+  transform: scale(1.1);
+  text-shadow: 0 0 15px rgba(199, 125, 255, 0.6);
+}
+
+#smart-scroll:active { 
+  transform: scale(0.92) translateY(0);
+  box-shadow: 
+      0 2px 8px rgba(0, 0, 0, 0.3),
+      0 0 0 1px rgba(199, 125, 255, 0.2);
+}
+
+/* Dark mode */
+body.darkmode #smart-scroll {
+  background: linear-gradient(
+      135deg, 
+      rgba(16, 0, 43, 0.75) 0%, 
+      rgba(26, 0, 48, 0.70) 100%
+  );
+  box-shadow: 
+      0 4px 12px rgba(0, 0, 0, 0.5),
+      0 0 0 1px rgba(199, 125, 255, 0.2),
+      0 0 20px rgba(199, 125, 255, 0.15);
+}
+
+body.darkmode #smart-scroll:hover {
+  background: linear-gradient(
+      135deg, 
+      rgba(36, 0, 70, 0.82) 0%, 
+      rgba(60, 9, 108, 0.78) 100%
+  );
+  box-shadow: 
+      0 8px 20px rgba(0, 0, 0, 0.6),
+      0 0 0 1px rgba(199, 125, 255, 0.35),
+      0 0 30px rgba(199, 125, 255, 0.3);
+}
+
+body.darkmode #smart-scroll i.material-icons {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+body.darkmode #smart-scroll:hover i.material-icons {
+  text-shadow: 0 0 20px rgba(199, 125, 255, 0.7);
+}
+
+@media (max-width: 960px) {
+  #smart-scroll {
+      bottom: 20px;
+      right: 16px;
+      width: 44px;
+      height: 44px;
+  }
+  
+  #smart-scroll i.material-icons {
+      font-size: 28px;
+  }
+}
 
 
 /* ============================================================
@@ -1999,7 +2076,6 @@ footer {
 ============================================================ */
 
 @media (max-width: 960px) {
-  /* Menu laterale: raccolto qui per avere un solo blocco mobile */
   #main-menu,
   #main-user-menu {
     max-width: 280px;
