@@ -1149,6 +1149,17 @@ body.darkmode #index .gh-hero-cta:hover {
 .forum-section:hover .forum-icon i,
 .posts-section:hover .forum-icon i { color: #ffffff !important; }
 
+.topic-header h1, .page-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 28px;
+  color: var(--accent-strong);
+  letter-spacing: -0.5px;
+  border-left: 3px solid var(--accent-soft);
+  padding-left: 12px;
+}
+
 
 /* ============================================================
    8. TOPIC & POST
