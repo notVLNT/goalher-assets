@@ -2069,7 +2069,7 @@ body.darkmode #breadcrumbs a + a::before {
   flex-wrap: wrap !important;
 }
 
-/* AddThis: non usare display:flex sul wrapper — rompe il layout interno del widget */
+/* AddThis */
 .topic-actions #addthis-toolbar {
   flex: 0 0 auto !important;
   align-self: center !important;
@@ -2226,7 +2226,7 @@ body.darkmode #plus_menu a:hover {
   color: #C77DFF;
 }
 
-/* AddThis: specificità alta + solo sul trigger (a o .btn-floating-left), dopo CSS forum/AddThis */
+/* AddThis */
 html body #addthis-toolbar a.btn-floating-left,
 html body #addthis-toolbar .btn-floating-left {
   font-family: 'Montserrat', sans-serif !important;
