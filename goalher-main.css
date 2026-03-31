@@ -2080,6 +2080,11 @@ body.darkmode #breadcrumbs a + a::before {
   flex-wrap: wrap !important;
 }
 
+.topic-actions.bottom .topic-actions-buttons > a {
+  line-height: 1 !important;
+  padding: 0 !important;
+}
+
 /* AddThis */
 .topic-actions #addthis-toolbar {
   flex: 0 0 auto !important;
