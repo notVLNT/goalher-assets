@@ -2226,7 +2226,7 @@ body.darkmode #plus_menu a:hover {
   color: #C77DFF;
 }
 
-/* AddThis */
+/* AddThis*/
 html body #addthis-toolbar a.btn-floating-left,
 html body #addthis-toolbar .btn-floating-left {
   font-family: 'Montserrat', sans-serif !important;
@@ -2236,7 +2236,6 @@ html body #addthis-toolbar .btn-floating-left {
   letter-spacing: .5px !important;
   color: var(--accent) !important;
   text-decoration: none !important;
-  padding: 2px 0 !important;
   margin: 0 !important;
   background: transparent !important;
   border: none !important;
