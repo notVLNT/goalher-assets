@@ -37,6 +37,7 @@
    17.  MOBILE (`@media (max-width: 960px)`)
    18.  DESKTOP (`@media (min-width: 961px)`)
    19.  BREADCRUMBS + TOPIC-ACTIONS
+   20. LOGIN POPUP
    ============================================================ */
 
 /* ============================================================
@@ -2598,4 +2599,395 @@ html body.darkmode #addthis-toolbar a.btn-floating-left:hover,
 html body.darkmode #addthis-toolbar .btn-floating-left:hover {
   color: var(--accent-soft) !important;
   border-bottom-color: var(--accent-soft) !important;
+}
+
+/* ============================================================
+20. LOGIN POPUP
+============================================================ */
+
+#gh-login-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 0, 43, 0.85);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  box-sizing: border-box;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+#gh-login-overlay.gh-visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#gh-login-card {
+  background: #ffffff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 24px 64px rgba(16, 0, 43, 0.5), 0 4px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transform: translateY(16px) scale(0.98);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+}
+
+#gh-login-overlay.gh-visible #gh-login-card {
+  transform: translateY(0) scale(1);
+}
+
+#gh-login-header {
+  background: linear-gradient(135deg, #3C096C 0%, #7B2FBE 100%);
+  padding: 28px 32px 24px;
+  text-align: center;
+  position: relative;
+}
+
+#gh-login-header::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #C77DFF, transparent);
+}
+
+#gh-login-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  line-height: 1;
+}
+
+#gh-login-logo .gh-pop-goal {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 28px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+#gh-login-logo .gh-pop-her {
+  font-family: 'Satisfy', cursive;
+  font-size: 32px;
+  color: #C77DFF;
+  line-height: 1;
+  padding-left: 2px;
+}
+
+#gh-login-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 8px;
+}
+
+#gh-login-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+  transition: background 0.2s ease, color 0.2s ease;
+  font-size: 18px;
+  line-height: 1;
+  padding: 0;
+}
+
+#gh-login-close:hover {
+  background: rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+}
+
+#gh-login-close i.material-icons {
+  font-size: 18px;
+  line-height: 1;
+}
+
+#gh-login-body {
+  padding: 28px 32px 24px;
+}
+
+#gh-login-error {
+  display: none;
+  background: #fff0f0;
+  border-left: 3px solid #e53935;
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin-bottom: 18px;
+  font-size: 13px;
+  color: #c62828;
+  line-height: 1.4;
+}
+
+#gh-login-error.gh-visible {
+  display: block;
+}
+
+.gh-login-field {
+  margin-bottom: 16px;
+}
+
+.gh-login-field label {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #5A189A;
+  margin-bottom: 6px;
+  cursor: default;
+}
+
+.gh-login-field input[type="text"],
+.gh-login-field input[type="password"] {
+  width: 100%;
+  box-sizing: border-box;
+  height: 44px;
+  border: 1.5px solid rgba(90, 24, 154, 0.2);
+  border-radius: 6px;
+  padding: 0 14px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #333;
+  background: #faf7ff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  outline: none;
+  display: block;
+  margin: 0;
+  max-width: 100%;
+  clear: none;
+  margin-bottom: 0;
+}
+
+.gh-login-field input[type="text"]:focus,
+.gh-login-field input[type="password"]:focus {
+  border-color: #5A189A;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(90, 24, 154, 0.1);
+}
+
+.gh-login-field input[type="password"] {
+  width: 100%;
+}
+
+#gh-login-autologin-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+#gh-login-autologin-wrap input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #5A189A;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+#gh-login-autologin-wrap span {
+  font-size: 13px;
+  color: #555;
+  font-weight: 400;
+}
+
+#gh-login-submit {
+  width: 100%;
+  height: 46px;
+  background: linear-gradient(135deg, #3C096C 0%, #7B2FBE 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: filter 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(60, 9, 108, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+#gh-login-submit:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(60, 9, 108, 0.45);
+}
+
+#gh-login-submit:active {
+  transform: translateY(0);
+  filter: brightness(0.95);
+}
+
+#gh-login-submit.gh-loading {
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+#gh-login-submit i.material-icons {
+  font-size: 18px;
+}
+
+.gh-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: gh-spin 0.7s linear infinite;
+  display: none;
+  flex-shrink: 0;
+}
+
+#gh-login-submit.gh-loading .gh-spinner { display: block; }
+#gh-login-submit.gh-loading .gh-btn-icon { display: none; }
+
+@keyframes gh-spin {
+  to { transform: rotate(360deg); }
+}
+
+#gh-login-footer {
+  padding: 0 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+#gh-login-footer a {
+  font-size: 12px;
+  color: #9B72CF;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-weight: 500;
+}
+
+#gh-login-footer a:hover {
+  color: #5A189A;
+  text-decoration: underline;
+}
+
+#gh-login-footer .gh-divider {
+  width: 40px;
+  height: 1px;
+  background: rgba(90, 24, 154, 0.12);
+}
+
+#gh-login-register-link {
+  font-size: 13px !important;
+  color: #5A189A !important;
+  font-weight: 700 !important;
+}
+
+body.darkmode #gh-login-card {
+  background: #1a0030;
+}
+
+body.darkmode #gh-login-body {
+  background: #1a0030;
+}
+
+body.darkmode .gh-login-field label {
+  color: #C77DFF;
+}
+
+body.darkmode .gh-login-field input[type="text"],
+body.darkmode .gh-login-field input[type="password"] {
+  background: #240046;
+  border-color: rgba(199, 125, 255, 0.2);
+  color: #e0d8ff;
+}
+
+body.darkmode .gh-login-field input[type="text"]:focus,
+body.darkmode .gh-login-field input[type="password"]:focus {
+  border-color: #C77DFF;
+  background: #2d0050;
+  box-shadow: 0 0 0 3px rgba(199, 125, 255, 0.12);
+}
+
+body.darkmode .gh-login-field .gh-eye-toggle {
+  color: rgba(199, 125, 255, 0.6);
+}
+
+body.darkmode .gh-login-field .gh-eye-toggle:hover {
+  color: #C77DFF;
+}
+
+body.darkmode #gh-login-autologin-wrap span {
+  color: rgba(224, 216, 255, 0.7);
+}
+
+body.darkmode #gh-login-footer {
+  background: #1a0030;
+}
+
+body.darkmode #gh-login-footer a {
+  color: rgba(199, 125, 255, 0.7);
+}
+
+body.darkmode #gh-login-footer a:hover {
+  color: #C77DFF;
+}
+
+body.darkmode #gh-login-error {
+  background: rgba(229, 57, 53, 0.1);
+  color: #ef9a9a;
+  border-left-color: #ef5350;
+}
+
+@media (max-width: 480px) {
+  #gh-login-card {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  #gh-login-header {
+    padding: 24px 24px 20px;
+  }
+
+  #gh-login-body {
+    padding: 22px 24px 18px;
+  }
+
+  #gh-login-footer {
+    padding: 0 24px 20px;
+  }
+
+  #gh-login-logo .gh-pop-goal {
+    font-size: 24px;
+  }
+
+  #gh-login-logo .gh-pop-her {
+    font-size: 28px;
+  }
 }
