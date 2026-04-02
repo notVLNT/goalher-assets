@@ -2267,24 +2267,44 @@ body.darkmode #smart-scroll:hover i.material-icons {
   #index .forum-lastpost i,
   #index .posts-lastpost i { display: none !important; }
 
-  /* block-online mobile */
+/* block-online mobile */
   .gh-online-wrap {
-    flex-wrap: wrap;
-    gap: 8px;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
   }
 
   .gh-online-section {
-    padding: 0;
+    padding: 0 !important;
+    width: 100% !important;
   }
 
   .gh-online-divider {
-    display: none;
+    display: none !important;
   }
 
   .gh-online-last {
-    display: none;
+    display: flex !important;
+    width: 100% !important;
+    align-items: center !important;
+    gap: 6px !important;
+    padding-top: 6px !important;
+    border-top: 1px solid rgba(0,0,0,0.06) !important;
+    overflow: hidden !important;
   }
 
+  .gh-last-author,
+  .gh-last-time {
+    display: none !important;
+  }
+
+  .gh-last-title {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    flex: 1 !important;
+    min-width: 0 !important;
+  }
 }
 
 /* ============================================================
