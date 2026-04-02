@@ -457,7 +457,6 @@ body.darkmode #block-online {
   background: transparent !important;
   border: none !important;
   box-shadow: 0 2px 3px rgba(0,0,0,0.4), 0 0 2px rgba(0,0,0,0.3) !important;
-
 }
 
 body.darkmode .gh-online-count { color: #e0d8ff; }
