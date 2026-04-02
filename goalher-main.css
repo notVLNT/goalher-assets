@@ -1784,10 +1784,10 @@ div.award { border: 2px solid var(--awards_color); }
 #block-online {
   display: block !important;
   padding: 12px 20px !important;
-  background: #ffffff;
+  background: transparent;
   border-radius: 8px;
   border: 1px solid rgba(0,0,0,0.08);
-  box-shadow: none !important;
+  box-shadow: 0 2px 3px rgb(0 0 0 / .1),0 0 2px rgb(0 0 0 / .1);
 }
 
 .gh-online-wrap {
