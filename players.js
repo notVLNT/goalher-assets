@@ -153,21 +153,25 @@ const PLAYERS = [
   { word: "ROORD",       nationality: "Olanda",       club: "Manchester City" },
   { word: "VANDEDONK",   nationality: "Olanda",       club: "London City Lionesses" },
 
-  // ──  Scozia  ────────────────────────────────────────────────
+  // ──   Portogallo ────────────────────────────────────────────────
+  { word: "KIKA",       nationality: "Portogallo",    club: "Barcellona" },
+  { word: "PAULETA",    nationality: "Portogallo",    club: "Benfica"},
+
+  // ──   Scozia  ────────────────────────────────────────────────
   { word: "CUTHBERT",    nationality: "Scozia",       club: "Chelsea" },
   { word: "LITTLE",      nationality: "Scozia",       club: "Arsenal"},
 
   // ──   Spagna ────────────────────────────────────────────────
+  { word: "AITANA",      nationality: "Spagna",       club: "Barcellona" },
+  { word: "ALEXIA",      nationality: "Spagna",       club: "Barcellona" },
   { word: "BATTLE",      nationality: "Spagna",       club: "Barcellona" },
-  { word: "BONMATI",     nationality: "Spagna",       club: "Barcellona" },
   { word: "BOQUETE",     nationality: "Spagna",       club: "Fiorentina" },
-  { word: "CARMONA",     nationality: "Spagna",       club: "Paris Saint-Germain" },
-  { word: "CALDENTEY",   nationality: "Spagna",       club: "Arsenal" },
-  { word: "GUIJARRO",    nationality: "Spagna",       club: "Barcellona" },
+  { word: "MARIONA",     nationality: "Spagna",       club: "Arsenal" },
+  { word: "OLGA",        nationality: "Spagna",       club: "Paris Saint-Germain" },
   { word: "PARALLUELO",  nationality: "Spagna",       club: "Barcellona" },
   { word: "PAREDES",     nationality: "Spagna",       club: "Barcellona" },
+  { word: "PATRI",       nationality: "Spagna",       club: "Barcellona" },
   { word: "PINA",        nationality: "Spagna",       club: "Barcellona" },
-  { word: "PUTELLAS",    nationality: "Spagna",       club: "Barcellona" },
 
   // ──  Stati Uniti ───────────────────────────────────────────
   { word: "DUNN",        nationality: "Stati Uniti",  club: "Portland Thorns FC" },
