@@ -14,7 +14,7 @@ const PLAYERS = [
   { word: "KERR",        nationality: "Australia",    club: "Chelsea" },
 
     // ── Belgio ────────────────────────────────────────────────
-  { word: "MISSIPO",     nationality: "Belgio",       club: "Inter"},
+  { word: "MISSIPO",     nationality: "Belgio",       club: "Sassuolo"},
   { word: "WULLAERT",    nationality: "Belgio",       club: "Inter"},
 
    // ── Brasile ───────────────────────────────────────────────
