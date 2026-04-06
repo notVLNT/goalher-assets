@@ -278,7 +278,7 @@ body.darkmode #index .forum-lastpost-time,
 body.darkmode #index .posts-lastpost-author,
 body.darkmode #index .posts-lastpost-time { color: rgba(237,232,255,0.55) !important; }
 
-body.darkmode #index .forum-header .category-title h2 { color: #C77DFF !important; }
+body.darkmode #index .forum-header .category-title h2 { color: #fff !important; }
 
 body.darkmode #index .forum-header .category-title::after {
   background: linear-gradient(90deg, transparent, rgba(199,125,255,0.5), transparent) !important;
@@ -1022,17 +1022,18 @@ body.darkmode #main-menu .divider {
   font-size: 58px !important;
   text-transform: none !important;
   letter-spacing: 0 !important;
-  color: var(--cat-color-her) !important;
+  color: #C77DFF !important;
+  text-shadow: 0 0 30px rgba(199,125,255,0.4);
 }
 
 #index .forum.forum-her .forum-section {
   border-left-color: #C77DFF !important;
 }
 
-body.darkmode #index .forum-header .category-title h2,
+/* body.darkmode #index .forum-header .category-title h2,
 body.darkmode #index .forum-header .category-title h1 {
   color: #C77DFF !important;
-}
+} */
 
 body.darkmode #index .forum-header .category-title::after {
   background: linear-gradient(90deg, transparent, rgba(199,125,255,0.5), transparent) !important;
@@ -1810,7 +1811,7 @@ blockquote {
 
 .catHead, .stat-bar img { background-color: #5A189A; }
 
-#block-online i.material-icons { color: #3C096C; }
+#block-online i.material-icons { color: #fff; }
 
 div.award { border: 2px solid var(--awards_color); }
 .dd_award + .award_more { width: initial; }
