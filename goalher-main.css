@@ -1813,7 +1813,7 @@ blockquote {
 
 .catHead, .stat-bar img { background-color: #5A189A; }
 
-#block-online i.material-icons { color: #3C096C !important; }
+#block-online i.material-icons { color: #3C096C; }
 
 div.award { border: 2px solid var(--awards_color); }
 .dd_award + .award_more { width: initial; }
@@ -1961,6 +1961,14 @@ footer {
   background-color: #3C096C;
   box-shadow: 0 -2px 8px rgba(0,0,0,0.12), 0 -1px 3px rgba(0,0,0,0.08);
   padding: 33px 0;
+}
+
+.footer-copy a {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  font-style: italic !important;
+  text-decoration: none !important;
+  color: inherit !important;
 }
 
 #footer-banner { text-align: center; }
