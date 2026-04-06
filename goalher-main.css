@@ -168,38 +168,50 @@
 
 
 /* ============================================================
-   3. DARK MODE
-   ============================================================ */
+   3. DARK MODE — Soft violet
+   Sostituisce integralmente la sezione 3 del goalher-main.css
 
-/* 3a. Layout e struttura */
+   Palette:
+   ─────────────────────────────────────────────────
+   Sfondo pagina          #1e1030   (era #10002B)
+   Superfici card/post    #2a1a40   (era #1a0030)
+   Menu/sidebar/secondari #251535   (era #240046)
+   Bordi                  rgba(199,125,255,0.15)  invariato
+   Testo principale       #ede8ff   (meno saturo)
+   Accento viola chiaro   #C77DFF   invariato
+   Accento viola medio    #9b72cf   invariato
+   ─────────────────────────────────────────────────
+*/
+
+/* ── 3a. Layout e struttura ───────────────────── */
 
 body.darkmode {
-  --bodyline_back: #1a0030;
-  --t_tr_color2:   #10002B;
-  --t_body_text:   #e0d8ff;
-  --t_body_link:   #e0d8ff;
-  --t_body_vlink:  #e0d8ff;
+  --bodyline_back: #2a1a40;
+  --t_tr_color2:   #1e1030;
+  --t_body_text:   #ede8ff;
+  --t_body_link:   #ede8ff;
+  --t_body_vlink:  #ede8ff;
   --t_body_hlink:  #C77DFF;
-  background-color: #10002B;
-  color: #e0d8ff;
+  background-color: #1e1030;
+  color: #ede8ff;
 }
 
-body.darkmode #wrap { background-color: #10002B; }
+body.darkmode #wrap { background-color: #1e1030; }
 
 body.darkmode #header-banner {
-  background: linear-gradient(135deg, #10002B 0%, #240046 50%, #3C096C 100%) !important;
+  background: linear-gradient(135deg, #1e1030 0%, #2a1a40 50%, #3C096C 100%) !important;
 }
 
-/* 3b. Sezioni forum & indice */
+/* ── 3b. Sezioni forum & indice ───────────────── */
 
 body.darkmode .forum-section,
 body.darkmode .posts-section {
-  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
 }
 
 body.darkmode .forum-icon,
 body.darkmode .posts-icon {
-  background-color: #2d0050 !important;
+  background-color: #352050 !important;
   box-shadow: 0 0 0 1px rgba(199,125,255,0.15);
 }
 
@@ -219,53 +231,53 @@ body.darkmode .posts-section:hover .forum-icon i { color: #ffffff !important; }
 
 body.darkmode .forum-description h3::after,
 body.darkmode .posts-description h3::after {
-  box-shadow: 0 0 11px 11px #1a0030 !important;
+  box-shadow: 0 0 11px 11px #2a1a40 !important;
 }
 
 body.darkmode .forum-description p,
-body.darkmode .posts-description p { color: rgba(224,216,255,0.7) !important; }
+body.darkmode .posts-description p { color: rgba(237,232,255,0.65) !important; }
 
 body.darkmode .forum-statistics-topics span,
 body.darkmode .forum-statistics-posts span,
 body.darkmode .posts-statistics-replies span,
-body.darkmode .posts-statistics-views span { color: rgba(224,216,255,0.6) !important; }
+body.darkmode .posts-statistics-views span { color: rgba(237,232,255,0.55) !important; }
 
 body.darkmode .forum-lastpost,
 body.darkmode .posts-lastpost {
-  background-color: #240046 !important;
-  border-color: rgba(199,125,255,0.15) !important;
-  color: #e0d8ff;
+  background-color: #251535 !important;
+  border-color: rgba(199,125,255,0.12) !important;
+  color: #ede8ff;
 }
 
 body.darkmode .forum-lastpost-location i,
 body.darkmode .forum-lastpost-author i,
 body.darkmode .forum-lastpost-time i,
 body.darkmode .posts-lastpost-author i,
-body.darkmode .posts-lastpost-time i { color: rgba(199,125,255,0.5) !important; }
+body.darkmode .posts-lastpost-time i { color: rgba(199,125,255,0.45) !important; }
 
 body.darkmode .forum-lastpost .topic-title i,
-body.darkmode .posts-lastpost .topic-title i { color: rgba(199,125,255,0.4) !important; }
+body.darkmode .posts-lastpost .topic-title i { color: rgba(199,125,255,0.35) !important; }
 
 body.darkmode .forum-header,
 body.darkmode .posts-header {
-  background: linear-gradient(90deg, #10002B, #3C096C) !important;
+  background: linear-gradient(90deg, #251535, #3C096C) !important;
 }
 
 /* Indice specifico */
 
-body.darkmode #index .forum-section-img { filter: grayscale(60%); }
+body.darkmode #index .forum-section-img { filter: grayscale(50%); }
 body.darkmode #index .forum-section:hover .forum-section-img { filter: grayscale(0%); }
 
 body.darkmode #index .forum-lastpost,
 body.darkmode #index .posts-lastpost {
   background-color: transparent !important;
-  border-color: rgba(199,125,255,0.2) !important;
+  border-color: rgba(199,125,255,0.15) !important;
 }
 
 body.darkmode #index .forum-lastpost-author,
 body.darkmode #index .forum-lastpost-time,
 body.darkmode #index .posts-lastpost-author,
-body.darkmode #index .posts-lastpost-time { color: rgba(224,216,255,0.6) !important; }
+body.darkmode #index .posts-lastpost-time { color: rgba(237,232,255,0.55) !important; }
 
 body.darkmode #index .forum-header .category-title h2 { color: #C77DFF !important; }
 
@@ -276,38 +288,38 @@ body.darkmode #index .forum-header .category-title::after {
 body.darkmode #index .forum-description h3 a,
 body.darkmode #index .posts-description h3 a { color: #C77DFF !important; }
 
-/* 3c. Post & topic */
+/* ── 3c. Post & topic ─────────────────────────── */
 
-body.darkmode .post { background-color: #1a0030 !important; }
+body.darkmode .post { background-color: #2a1a40 !important; }
 
 body.darkmode .post-section {
-  background-color: #1a0030 !important;
+  background-color: #2a1a40 !important;
+  border-color: rgba(199,125,255,0.12) !important;
+}
+
+body.darkmode .post-time    { color: rgba(237,232,255,0.4) !important; }
+body.darkmode .post-details { color: rgba(237,232,255,0.55) !important; }
+body.darkmode blockquote    { background-color: #352050 !important; }
+
+body.darkmode .attachbox {
+  background-color: #251535 !important;
   border-color: rgba(199,125,255,0.15) !important;
 }
 
-body.darkmode .post-time    { color: rgba(224,216,255,0.5) !important; }
-body.darkmode .post-details { color: rgba(224,216,255,0.6) !important; }
-body.darkmode blockquote    { background-color: #2d0050 !important; }
-
-body.darkmode .attachbox {
-  background-color: #240046 !important;
-  border-color: rgba(199,125,255,0.2) !important;
-}
-
 body.darkmode .post-footer {
-  background-color: #1e0038;
-  border-top-color: rgba(199,125,255,0.15);
+  background-color: #251535;
+  border-top-color: rgba(199,125,255,0.12);
 }
 
 /* Post-aside dark */
 
 body.darkmode .post-aside .post-author-details {
-  border-top-color: rgba(123,47,190,0.3) !important;
+  border-top-color: rgba(199,125,255,0.2) !important;
 }
 
 body.darkmode .post-aside .post-author-details div {
-  color: rgba(224,216,255,0.75) !important;
-  border-bottom-color: rgba(123,47,190,0.15) !important;
+  color: rgba(237,232,255,0.75) !important;
+  border-bottom-color: rgba(199,125,255,0.1) !important;
   background: transparent !important;
 }
 
@@ -321,99 +333,99 @@ body.darkmode .post-aside .post-author-details div .label i.material-icons {
 
 body.darkmode .post-aside .post-author-details div span:not(.label),
 body.darkmode .post-aside .post-author-details div > *:not(.label) {
-  color: #e0d8ff !important;
+  color: #ede8ff !important;
 }
 
-/* 3d. Block / box / widget */
+/* ── 3d. Block / box / widget ─────────────────── */
 
 body.darkmode .block .block-content {
-  background-color: #1a0030 !important;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  background-color: #2a1a40 !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
 }
 
-body.darkmode .block .block-secondary-content { background-color: #240046 !important; }
+body.darkmode .block .block-secondary-content { background-color: #251535 !important; }
 
 body.darkmode .block .sub-head {
-  background-color: #240046 !important;
-  border-color: rgba(199,125,255,0.15) !important;
+  background-color: #251535 !important;
+  border-color: rgba(199,125,255,0.12) !important;
 }
 
 body.darkmode .block .block-footer {
-  background-color: #240046 !important;
-  border-color: rgba(199,125,255,0.15) !important;
+  background-color: #251535 !important;
+  border-color: rgba(199,125,255,0.12) !important;
 }
 
-body.darkmode .block-subtle { background-color: #1a0030 !important; }
+body.darkmode .block-subtle { background-color: #2a1a40 !important; }
 
 body.darkmode .block-topics .block-topics-lastpost {
-  border-top-color: rgba(199,125,255,0.15) !important;
+  border-top-color: rgba(199,125,255,0.12) !important;
 }
 
-body.darkmode .block-topics .block-topics-icon { background-color: #2d0050 !important; }
+body.darkmode .block-topics .block-topics-icon { background-color: #352050 !important; }
 
-body.darkmode .box-body { background-color: #1a0030 !important; }
+body.darkmode .box-body { background-color: #2a1a40 !important; }
 
 body.darkmode .box-foot {
-  background-color: #240046 !important;
-  color: #e0d8ff !important;
+  background-color: #251535 !important;
+  color: #ede8ff !important;
 }
 
 body.darkmode .box hr,
-body.darkmode .box-body hr { border-color: rgba(199,125,255,0.15) !important; }
+body.darkmode .box-body hr { border-color: rgba(199,125,255,0.12) !important; }
 
 body.darkmode .box-body::after,
 body.darkmode .block-content::after {
-  box-shadow: 0 0 16px 9px #1a0030 inset !important;
+  box-shadow: 0 0 16px 9px #2a1a40 inset !important;
 }
 
 /* Widget */
 
-body.darkmode .mod-recent-row          { background-color: transparent !important; }
-body.darkmode .mod-recent-title a      { color: #e0d8ff !important; }
+body.darkmode .mod-recent-row           { background-color: transparent !important; }
+body.darkmode .mod-recent-title a       { color: #ede8ff !important; }
 body.darkmode .mod-recent-title a:hover { color: #C77DFF !important; }
 body.darkmode .mod-recent-time,
-body.darkmode .mod-recent-author       { color: rgba(224,216,255,0.5) !important; }
+body.darkmode .mod-recent-author        { color: rgba(237,232,255,0.4) !important; }
 
 body.darkmode #comments_scroll_div,
 body.darkmode .js-marquee,
-body.darkmode .js-marquee-wrapper      { background-color: transparent !important; }
+body.darkmode .js-marquee-wrapper       { background-color: transparent !important; }
 
 body.darkmode #comments_scroll_div::after,
 body.darkmode .js-marquee-wrapper::after {
-  box-shadow: 0 0 16px 9px #1a0030 inset !important;
+  box-shadow: 0 0 16px 9px #2a1a40 inset !important;
 }
 
-body.darkmode .mod-stats-user         { background-color: rgba(199,125,255,0.08) !important; }
-body.darkmode .notizie-titolo         { color: #e0d8ff !important; }
-body.darkmode .notizie-widget-item    { border-bottom-color: rgba(199,125,255,0.15) !important; }
+body.darkmode .mod-stats-user      { background-color: rgba(199,125,255,0.08) !important; }
+body.darkmode .notizie-titolo      { color: #ede8ff !important; }
+body.darkmode .notizie-widget-item { border-bottom-color: rgba(199,125,255,0.12) !important; }
 
-/* 3e. Editor, dropdown, tabelle, varie */
+/* ── 3e. Editor, dropdown, tabelle, varie ─────── */
 
 body.darkmode .sceditor-container iframe,
 body.darkmode .sceditor-container textarea {
-  background-color: #1a0030 !important;
-  color: #e0d8ff !important;
+  background-color: #2a1a40 !important;
+  color: #ede8ff !important;
 }
 
 body.darkmode .sceditor-group {
-  background-color: #240046 !important;
-  border-color: rgba(199,125,255,0.2) !important;
+  background-color: #251535 !important;
+  border-color: rgba(199,125,255,0.15) !important;
 }
 
 body.darkmode .quick-reply .textarea {
-  background-color: #1a0030 !important;
+  background-color: #2a1a40 !important;
   border-color: rgba(199,125,255,0.2) !important;
-  color: #e0d8ff !important;
+  color: #ede8ff !important;
 }
 
 body.darkmode .quick-reply-textarea-wrap .sceditor-container iframe,
 body.darkmode .quick-reply-textarea-wrap .sceditor-container textarea {
-  background-color: #1a0030 !important;
+  background-color: #2a1a40 !important;
   border-top-color: rgba(199,125,255,0.2) !important;
 }
 
 body.darkmode .quick-reply-textarea-wrap .sceditor-container {
-  border-color: rgba(199,125,255,0.3) !important;
+  border-color: rgba(199,125,255,0.25) !important;
   border-radius: 16px 3px 3px 3px !important;
 }
 
@@ -422,60 +434,59 @@ body.darkmode .sceditor-button div {
 }
 
 body.darkmode .dropdown-box {
-  background-color: #240046 !important;
-  color: #e0d8ff !important;
+  background-color: #251535 !important;
+  color: #ede8ff !important;
 }
 
-body.darkmode .dropdown-box a            { color: #e0d8ff !important; }
+body.darkmode .dropdown-box a            { color: #ede8ff !important; }
 body.darkmode .dropdown-box a:hover      { background-color: rgba(199,125,255,0.1) !important; }
 body.darkmode .dropdown-box .activetab a { color: #C77DFF !important; }
-body.darkmode select option              { background-color: #1a0030; }
+body.darkmode select option              { background-color: #2a1a40; }
 
 body.darkmode .forumline th,
 body.darkmode .forumline td,
 body.darkmode .table1 th,
-body.darkmode .table1 td { border-color: #3C096C !important; }
+body.darkmode .table1 td { border-color: rgba(199,125,255,0.15) !important; }
 
 body.darkmode .forumline tbody tr,
-body.darkmode .table1 tbody tr { background-color: #1a0030 !important; }
+body.darkmode .table1 tbody tr { background-color: #2a1a40 !important; }
 
-body.darkmode .poll-bar-wrap    { background-color: #3C096C !important; }
-body.darkmode .notification-row { background-color: #1a0030 !important; }
+body.darkmode .poll-bar-wrap    { background-color: #352050 !important; }
+body.darkmode .notification-row { background-color: #2a1a40 !important; }
 
 body.darkmode .overview,
 body.darkmode #plus_menu {
-  background-color: #240046 !important;
-  color: #e0d8ff !important;
+  background-color: #251535 !important;
+  color: #ede8ff !important;
 }
 
-body.darkmode #page-footer          { background-color: #000014 !important; }
-body.darkmode div.award             { border-color: #C77DFF !important; }
-body.darkmode .gensmall a           { color: #C77DFF !important; }
+body.darkmode #page-footer { background-color: #120a1e !important; }
+body.darkmode div.award    { border-color: #C77DFF !important; }
+body.darkmode .gensmall a  { color: #C77DFF !important; }
 
 /* block-online dark mode */
 body.darkmode #block-online {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.4), 0 0 2px rgba(0,0,0,0.3) !important;
+  background: #2a1a40 !important;
+  border-color: rgba(199,125,255,0.15) !important;
 }
 
-body.darkmode .gh-online-count { color: #e0d8ff; }
-body.darkmode .gh-stat { color: rgba(224,216,255,0.7); }
-body.darkmode .gh-stat strong { color: #C77DFF; }
-body.darkmode .gh-last-time { color: rgba(224,216,255,0.4); }
-body.darkmode .gh-online-divider { background: rgba(199,125,255,0.15); }
+body.darkmode .gh-online-count              { color: #ede8ff; }
+body.darkmode .gh-stat                      { color: rgba(237,232,255,0.65); }
+body.darkmode .gh-stat strong               { color: #C77DFF; }
+body.darkmode .gh-last-time                 { color: rgba(237,232,255,0.35); }
+body.darkmode .gh-online-divider            { background: rgba(199,125,255,0.15); }
 
-/* 3f. Like & reactions */
+/* ── 3f. Like & reactions ─────────────────────── */
 
 body.darkmode .fa_like_list {
-  color: rgba(224,216,255,0.6);
+  color: rgba(237,232,255,0.55);
   border-left-color: rgba(199,125,255,0.3);
 }
 
 body.darkmode .fa_like_list a { color: #C77DFF; }
-body.darkmode .rep-button     { background-color: #10002B; }
+body.darkmode .rep-button     { background-color: #1e1030; }
 
-/* 3g. Smart scroll */
+/* ── 3g. Smart scroll ─────────────────────────── */
 
 body.darkmode #smart-scroll {
   background-color: #3c096c;
@@ -486,6 +497,40 @@ body.darkmode #smart-scroll:hover {
   background-color: #7b2cbf;
   border-color: rgba(199,125,255,0.4);
 }
+
+/* ── Desktop: post-aside dark ────────────────── */
+
+@media (min-width: 961px) {
+
+  body.darkmode .post-aside {
+    background-color: #251535 !important;
+    border-top-color: #9b72cf !important;
+    border-right-color: rgba(199,125,255,0.15) !important;
+  }
+
+  body.darkmode .post-aside .post-author-avatar .avatar-big img,
+  body.darkmode .post-author-avatar .avatar-big img {
+    border-color: #9b72cf !important;
+    box-shadow: 0 0 0 2px #251535, 0 4px 12px rgba(90,24,154,0.35) !important;
+  }
+
+  body.darkmode .post-aside .post-author-status {
+    box-shadow: 0 0 0 2px #251535 !important;
+  }
+}
+
+/* ── Mobile: post-aside dark ─────────────────── */
+
+@media (max-width: 960px) {
+  body.darkmode .post-aside { background-color: #251535; }
+
+  body.darkmode .post-aside .post-author-avatar .avatar-big img,
+  body.darkmode .post-author-avatar .avatar-big img {
+    border-color: #9b72cf !important;
+    box-shadow: 0 0 0 1px #251535 !important;
+  }
+}
+
 /* ============================================================
    4. HEADER & BANNER
    ============================================================ */
