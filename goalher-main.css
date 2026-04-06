@@ -1811,7 +1811,9 @@ blockquote {
 
 .catHead, .stat-bar img { background-color: #5A189A; }
 
-#block-online i.material-icons { color: #fff; }
+-
+#block-online i.material-icons { color: #3C096C; }
+body.darkmode #block-online i.material-icons { color: #fff; }
 
 div.award { border: 2px solid var(--awards_color); }
 .dd_award + .award_more { width: initial; }
