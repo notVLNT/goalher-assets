@@ -469,7 +469,7 @@ body.darkmode #block-online {
   border-color: rgba(199,125,255,0.15) !important;
 }
 
-body.darkmode #block-online i.material-icons { color: #fff; }
+body.darkmode #block-online i.material-icons { color: #fff !important; }
 
 body.darkmode .gh-online-count              { color: #ede8ff; }
 body.darkmode .gh-stat                      { color: rgba(237,232,255,0.65); }
