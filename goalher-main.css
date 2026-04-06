@@ -168,18 +168,17 @@
 
 
 /* ============================================================
-   3. DARK MODE — Soft violet
-   Sostituisce integralmente la sezione 3 del goalher-main.css
+   3. DARK MODE
 
    Palette:
    ─────────────────────────────────────────────────
-   Sfondo pagina          #1e1030   (era #10002B)
-   Superfici card/post    #2a1a40   (era #1a0030)
-   Menu/sidebar/secondari #251535   (era #240046)
-   Bordi                  rgba(199,125,255,0.15)  invariato
-   Testo principale       #ede8ff   (meno saturo)
-   Accento viola chiaro   #C77DFF   invariato
-   Accento viola medio    #9b72cf   invariato
+   Sfondo pagina          #1e1030  
+   Superfici card/post    #2a1a40  
+   Menu/sidebar/secondari #251535   
+   Bordi                  rgba(199,125,255,0.15) 
+   Testo principale       #ede8ff   
+   Accento viola chiaro   #C77DFF   
+   Accento viola medio    #9b72cf  
    ─────────────────────────────────────────────────
 */
 
