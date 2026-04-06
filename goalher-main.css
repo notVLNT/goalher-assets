@@ -1929,7 +1929,6 @@ div.award { border: 2px solid var(--awards_color); }
 .gh-last-title {
   font-size: 13px;
   font-weight: 600;
-  color: #3C096C;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
