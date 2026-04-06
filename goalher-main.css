@@ -469,6 +469,8 @@ body.darkmode #block-online {
   border-color: rgba(199,125,255,0.15) !important;
 }
 
+body.darkmode #block-online i.material-icons { color: #fff; }
+
 body.darkmode .gh-online-count              { color: #ede8ff; }
 body.darkmode .gh-stat                      { color: rgba(237,232,255,0.65); }
 body.darkmode .gh-stat strong               { color: #C77DFF; }
@@ -1811,8 +1813,7 @@ blockquote {
 
 .catHead, .stat-bar img { background-color: #5A189A; }
 
--
-#block-online i.material-icons { color: #3C096C; }
+#block-online i.material-icons { color: #3C096C !important; }
 
 div.award { border: 2px solid var(--awards_color); }
 .dd_award + .award_more { width: initial; }
