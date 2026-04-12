@@ -32,6 +32,7 @@ const PLAYERS = [
   { word: "VIENS",       nationality: "Canada",       club: "Roma" },
 
     // ── Colombia ────────────────────────────────────────────────
+  { word: "CAICEDO",     nationality: "Colombia",     club: "Real Madrid" },
   { word: "RAMIREZ",     nationality: "Colombia",     club: "Chelsea" },
 
     // ── Danimarca ─────────────────────────────────────────────
@@ -52,6 +53,7 @@ const PLAYERS = [
   { word: "KARCHAOUI",   nationality: "Francia",      club: "Paris Saint-Germain " },
   { word: "KATOTO",      nationality: "Francia",      club: "Lione" },
   { word: "RENARD",      nationality: "Francia",      club: "Lione" },
+  { word: "TOLETTI",     nationality: "Francia",      club: "Real Madrid" },
 
     // ── Germania ──────────────────────────────────────────────
   { word: "BERGER",      nationality: "Germania",     club: "NJ/NY Gotham FC" },
@@ -62,6 +64,7 @@ const PLAYERS = [
   { word: "MAGULL",      nationality: "Germania",     club: "Inter" },
   { word: "NUSKEN",      nationality: "Germania",     club: "Chelsea" },
   { word: "OBERDORF",    nationality: "Germania",     club: "Wolfsburg" },
+  { word: "POPP",        nationality: "Germania",     club: "Wolfsburg" },
   { word: "SCHULLER",    nationality: "Germania",     club: "Manchester United" },
 
   // ──   Giappone ────────────────────────────────────────────────
@@ -179,6 +182,8 @@ const PLAYERS = [
   { word: "GIRMA",       nationality: "Stati Uniti",  club: "Chelsea" },
   { word: "HEAPS",       nationality: "Stati Uniti",  club: "Denver Summit FC" },
   { word: "LAVELLE",     nationality: "Stati Uniti",  club: "NJ/NY Gotham FC" },
+  { word: "MORGAN",      nationality: "Stati Uniti",  club: "Leggenda" },
+  { word: "RAPINOE",     nationality: "Stati Uniti",  club: "Leggenda" },
   { word: "RODMAN",      nationality: "Stati Uniti",  club: "Washington Spirit" },
   { word: "THOMPSON",    nationality: "Stati Uniti",  club: "Chelsea" },
   { word: "YOHANNES",    nationality: "Stati Uniti",  club: "Lione" },
@@ -189,10 +194,12 @@ const PLAYERS = [
   { word: "BLACKSTENIUS",nationality: "Svezia",       club: "Arsenal" },
   { word: "BLOMQVIST",   nationality: "Svezia",       club: "Eintracht Frankfurt" },
   { word: "ERIKSSON",    nationality: "Svezia",       club: "Bayern Monaco" },
+  { word: "HURTIG",      nationality: "Svezia",       club: "Fiorentina" },
   { word: "KAFAJI",      nationality: "Svezia",       club: "Brighton"},
   { word: "KANERYD",     nationality: "Svezia",       club: "Chelsea" },
   { word: "KULLBERG",    nationality: "Svezia",       club: "Juventus" },
   { word: "ROLFO",       nationality: "Svezia",       club: "Manchester United" },
+  { word: "SEMBRANT",    nationality: "Stati Uniti",  club: "AIK" },
 
   // ──   Svizzera ───────────────────────────────────────────────
   { word: "BACHMANN",    nationality: "Svizzera",      club: "Chelsea" },
