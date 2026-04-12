@@ -195,7 +195,7 @@ body.darkmode {
   color: #ede8ff;
 }
 
-/* body.darkmode #wrap { background-color: #1e1030; } */
+body.darkmode #wrap { background-color: #1e1030; }
 
 body.darkmode #header-banner {
   background: linear-gradient(135deg, #1e1030 0%, #2a1a40 50%, #3C096C 100%) !important;
