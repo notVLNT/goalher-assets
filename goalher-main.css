@@ -155,7 +155,6 @@
 
 #darkmode-toggle.is-dark .dm-thumb {
   transform: translateX(22px);
-  background: #C77DFF;
 }
 
 #darkmode-toggle:hover .dm-track { border-color: rgba(255,255,255,0.6); }
