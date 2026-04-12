@@ -284,7 +284,7 @@ body.darkmode #index .forum-header .category-title::after {
 }
 
 body.darkmode #index .forum-description h3 a,
-body.darkmode #index .posts-description h3 a { color: #C77DFF !important; }
+body.darkmode #index .posts-description h3 a { color: #fff !important; }
 
 /* ── 3c. Post & topic ─────────────────────────── */
 
@@ -472,7 +472,7 @@ body.darkmode #block-online i.material-icons { color: #fff !important; }
 
 body.darkmode .gh-online-count              { color: #ede8ff; }
 body.darkmode .gh-stat                      { color: rgba(237,232,255,0.65); }
-body.darkmode .gh-stat strong               { color: #C77DFF; }
+body.darkmode .gh-stat strong               { color: #fff; }
 body.darkmode .gh-last-time                 { color: rgba(237,232,255,0.35); }
 body.darkmode .gh-online-divider            { background: rgba(199,125,255,0.15); }
 
