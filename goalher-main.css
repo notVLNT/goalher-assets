@@ -1335,7 +1335,7 @@ body.darkmode #index .gh-hero-title {
 
 body.darkmode #index .gh-hero-cta {
   background: linear-gradient(135deg, #1a0030 0%, #2d0050 100%);
-  color: #C77DFF;
+  color: #fff;
   border: 1px solid rgba(199,125,255,0.3);
 }
 
