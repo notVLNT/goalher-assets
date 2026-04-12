@@ -866,7 +866,7 @@ body.darkmode .logo-css-her { text-shadow: 0 0 30px rgba(199,125,255,0.4); }
 #main-menu ul a i.material-icons,
 #main-user-menu ul a i.material-icons {
   font-size: 20px;
-  color: var(--accent-soft);
+  color: #fff;
   opacity: 0.8;
   transition: color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
   flex-shrink: 0;
