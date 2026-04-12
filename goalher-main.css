@@ -229,7 +229,7 @@ body.darkmode .posts-section:hover .forum-icon i { color: #ffffff !important; }
 
 body.darkmode .forum-description h3::after,
 body.darkmode .posts-description h3::after {
-  box-shadow: 0 0 11px 11px #2a1a40 !important;
+  box-shadow: none;
 }
 
 body.darkmode .forum-description p,
