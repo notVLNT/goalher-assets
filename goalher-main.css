@@ -1393,7 +1393,6 @@ body.darkmode #index .gh-hero-cta:hover {
 
 .forum-header, .posts-header {
   background: linear-gradient(90deg, #3C096C, #5A189A);
-  border-left: 4px solid #C77DFF;
   border-radius: 4px 4px 0 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.08);
   text-shadow: 0 2px rgba(0,0,0,.15);
