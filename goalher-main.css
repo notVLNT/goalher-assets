@@ -48,7 +48,7 @@
   /* Palette principale */
   --bg-body:           #f0eaf8;
   --bg-surface:        #ffffff;
-  --forum-section-bg: var(--bg-surface);
+  --forum-section-bg:  transparent;
   --bg-surface-alt:    #f0eaf8;
   --text-primary:      #333333;
   --text-secondary:    #444444;
