@@ -1661,8 +1661,6 @@ blockquote {
    10. PULSANTI
    ============================================================ */
 
-.btn-fixed { background-color: #5A189A; }
-
 .btn-default, .mainoption, .button, .button1, .button2, .liteoption {
   background-color: #5A189A;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
@@ -1684,6 +1682,43 @@ blockquote {
   cursor: pointer;
 }
 
+.topic-header .btn-default,
+.page-header .btn-default {
+  background: transparent !important;
+  border: 2px solid #5A189A !important;
+  color: #5A189A !important;
+  box-shadow: none !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  border-radius: 20px !important;
+}
+
+.topic-header .btn-default:hover,
+.page-header .btn-default:hover {
+  background: #5A189A !important;
+  color: #ffffff !important;
+}
+
+.btn-fixed {
+  background-color: var(--accent-strong) !important;
+  border-radius: 50% !important;
+  width: 48px !important;
+  height: 48px !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4) !important;
+}
+
+.btn-fixed:hover {
+  background-color: var(--accent) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.5) !important;
+}
+
+.btn-fixed .btn-fixed-txt {
+  display: none !important;
+}
 
 /* ============================================================
    11. BLOCK / BOX / WIDGET
@@ -1979,30 +2014,20 @@ footer {
 #smart-scroll {
   position: fixed;
   bottom: 25px;
-  right: 20px;
+  left: 20px;
+  right: auto;
   z-index: 999;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 48px;
   height: 48px;
-  background: linear-gradient(
-      135deg, 
-      rgba(60, 9, 108, 0.75) 0%, 
-      rgba(36, 0, 70, 0.70) 100%
-  );
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  
+  background-color: var(--accent-strong);
   color: var(--text-on-dark);
   border-radius: 50%;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 
-      0 4px 12px rgba(0, 0, 0, 0.35),
-      0 0 0 1px rgba(199, 125, 255, 0.15),
-      0 0 20px rgba(199, 125, 255, 0.1);
-  
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
