@@ -1438,8 +1438,18 @@ body.darkmode #index .gh-hero-cta:hover {
   font-size: 28px;
   color: var(--accent-strong);
   letter-spacing: -0.5px;
-  border-left: 3px solid var(--accent-soft);
-  padding-left: 12px;
+  padding-bottom: 12px;
+  position: relative;
+}
+
+.topic-header h1::after, .page-header h1::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-soft), transparent);
+  margin-top: 10px;
+  width: 60%;
+  border-radius: 2px;
 }
 
 
