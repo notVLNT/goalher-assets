@@ -1708,6 +1708,12 @@ blockquote {
   width: 48px !important;
   height: 48px !important;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4) !important;
+  padding-left: 0 !important;
+}
+
+.btn-fixed.btn-scrolled {
+  width: 48px !important;
+  padding-left: 0 !important;
 }
 
 .btn-fixed:hover {
