@@ -375,6 +375,9 @@ body.darkmode .box-body::after,
 body.darkmode .block-content::after {
   box-shadow: 0 0 16px 9px #2a1a40 inset !important;
 }
+body.darkmode .grid-section .topic-card {
+  background-color: transparent;
+}
 
 /* Widget */
 
@@ -1482,6 +1485,13 @@ blockquote {
 .fa_like_others:hover,
 .fa_like_others:focus { color: #5A189A; }
 
+.posts-icon {
+  display: none !important;
+}
+.posts-content {
+  margin-left: 0 !important;
+}
+
 
 /* ============================================================
    9. POST-ASIDE (autore)
@@ -2231,6 +2241,10 @@ body.darkmode #smart-scroll:hover i.material-icons {
 
   #index .forum-lastpost i,
   #index .posts-lastpost i { display: none !important; }
+
+ .posts-lastpost {
+  margin-left: -16px !important;
+ }
 
 /* block-online mobile */
   .gh-online-wrap {
