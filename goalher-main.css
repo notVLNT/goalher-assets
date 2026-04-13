@@ -1452,6 +1452,32 @@ body.darkmode #index .gh-hero-cta:hover {
   border-radius: 2px;
 }
 
+.btn-flat.mark-buttons {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  color: #5A189A !important;
+  padding: 2px 0 !important;
+  margin-right: 12px !important;
+  border-bottom: 1px solid transparent !important;
+  transition: color 0.2s ease, border-color 0.2s ease !important;
+}
+
+.btn-flat.mark-buttons:hover {
+  color: #C77DFF !important;
+  border-bottom-color: #C77DFF !important;
+  background: transparent !important;
+}
+
+.btn-flat.mark-buttons i {
+  margin-left: 0 !important;
+}
+
 
 /* ============================================================
    8. TOPIC & POST
