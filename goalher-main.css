@@ -48,6 +48,7 @@
   /* Palette principale */
   --bg-body:           #f0eaf8;
   --bg-surface:        #ffffff;
+  --forum-section-bg: var(--bg-surface);
   --bg-surface-alt:    #f0eaf8;
   --text-primary:      #333333;
   --text-secondary:    #444444;
@@ -264,7 +265,6 @@ body.darkmode .posts-header {
 /* Indice specifico */
 
 body.darkmode #index .forum-section-img { filter: grayscale(50%); }
-body.darkmode #index .forum-section:hover .forum-section-img { filter: grayscale(0%); }
 
 body.darkmode #index .forum-lastpost,
 body.darkmode #index .posts-lastpost {
@@ -1423,7 +1423,6 @@ body.darkmode #index .gh-hero-cta:hover {
 .forum-icon i {
   font-size: 20px !important;
   vertical-align: middle !important;
-  color: #5A189A !important;
   transition: color 0.2s ease;
 }
 
@@ -1458,7 +1457,6 @@ body.darkmode #index .gh-hero-cta:hover {
   right: -5px;
   top: 0;
   bottom: 0;
-  box-shadow: 0 0 11px 16px #31005F;
   width: 5px;
   transition: all .16s ease;
 }
@@ -1495,13 +1493,6 @@ blockquote {
   overflow: hidden !important;
   margin: 0 !important;
   padding: 0 !important;
-}
-
-.post-aside .post-author-avatar .avatar-big img,
-.post-author-avatar .avatar-big img {
-  border-radius: 50% !important;
-  border: 3px solid #C77DFF !important;
-  object-fit: cover !important;
 }
 
 .post-aside .post-author-title {
@@ -1670,70 +1661,6 @@ blockquote {
   text-shadow: 0 2px rgba(0,0,0,.15);
 }
 
-#classifica-serieA-widget-content iframe { height: 803px !important; }
-
-
-/* ============================================================
-   12. WIDGET NOTIZIE
-   ============================================================ */
-
-.notizie-widget-list {
-  list-style: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.notizie-widget-item { border-bottom: 1px solid rgba(0,0,0,0.06); }
-.notizie-widget-item:last-child { border-bottom: none; }
-
-.notizie-widget-item a {
-  display: block;
-  padding: 8px 4px;
-  text-decoration: none;
-  color: inherit;
-  transition: background-color 0.2s ease;
-}
-
-.notizie-widget-item a:hover { background-color: rgba(90,24,154,0.05); }
-
-/* Sezione al momento inutilizzata:
-   mantenuta come riferimento per un eventuale ripristino del widget notizie.
-.notizie-titolo {
-  display: block;
-  font-size: 12px;
-  color: var(--notizie-titolo);
-  line-height: 1.4;
-  margin-bottom: 4px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
-.notizie-widget-item a:hover .notizie-titolo { color: #5A189A; }
-*/
-
-.notizie-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 11px;
-  color: #999;
-  gap: 6px;
-}
-
-.notizie-source {
-  font-weight: 600;
-  color: #5A189A;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 120px;
-}
-
-.notizie-date { white-space: nowrap; }
-
-
 /* ============================================================
    13. PROFILI
    ============================================================ */
@@ -1771,20 +1698,6 @@ blockquote {
   vertical-align: middle;
   margin-right: 4px;
 }
-
-/* Icona corona admin 
-.post-author-name.is-admin::before {
-  content: "";
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  background: url(https://2img.net/i.imgur.com/boQcVDi.png) no-repeat center center;
-  background-size: contain;
-  vertical-align: middle;
-  margin-right: 2px;
-}
-  */
-
 
 /* ============================================================
    14. VARIE
@@ -2235,8 +2148,6 @@ body.darkmode #smart-scroll:hover i.material-icons {
     margin: 0 11px 0 0 !important;
     box-shadow: 0 0 0 1px #ffffff !important;
   }
-  
-  body.darkmode .post-aside { background-color: #1e0038; }
 
   .post-aside .post-author-details { display: none !important; }
   .post-aside .post-author-contact { display: none !important; }
