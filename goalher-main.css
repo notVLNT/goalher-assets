@@ -362,6 +362,11 @@ body.darkmode .block-topics .block-topics-lastpost {
 
 body.darkmode .block-topics .block-topics-icon { background-color: #352050 !important; }
 
+body.darkmode .block-topics .block-topics-posts i, .block-topics .block-topics-views i {color:#e0d8ee}
+body.darkmode .block-topics .block-topics-category {background-color: var(--accent-strong)}
+body.darkmode .topic-card .topic-type {background-color: var(--accent-strong)}
+body.darkmode .topic-header h1, .page-header h1 {color: #ede8ff}
+
 body.darkmode .box-body { background-color: #2a1a40 !important; }
 
 body.darkmode .box-foot {
@@ -470,6 +475,8 @@ body.darkmode .member-block { background-color: #2a1a40; }
 body.darkmode .member-block a { color: #e0d8ee; }
 body.darkmode .member-block .member-details {color:#e0d8ee}
 body.darkmode .member-details .material-symbols-outlined {color:#e0d8ee}
+
+body.darkmode .select select {color:#e0d8ee; background-color:#2a1a40;}
 
 /* block-online dark mode */
 body.darkmode #block-online {
