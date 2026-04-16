@@ -1544,6 +1544,12 @@ blockquote {
   margin-left: 0 !important;
 }
 
+.topic-card .topic-type {background-color: var(--accent-strong);}
+.topic-card .description { color: #333; }
+
+body.darkmode .topic-card .topic-type {background-color: var(--accent-strong);}
+body.darkmode .topic-card .description { color: #ddd; }
+
 
 /* ============================================================
    9. POST-ASIDE (autore)
