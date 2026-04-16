@@ -3062,13 +3062,13 @@ body.darkmode #gh-login-error {
 
 .gh-dash-container {
     display: grid;
-    grid-template-columns: 1.1fr 0.7fr 0.7fr; /* Rapporto bilanciato */
+    grid-template-columns: 1.1fr 0.7fr 0.7fr;
     gap: 16px;
     margin-bottom: 20px;
 }
 
 .gh-dash-tile {
-    position: relative; /* Indispensabile per posizionare l'icona */
+    position: relative;
     height: 100px;
     border-radius: 16px;
     display: flex;
@@ -3078,10 +3078,8 @@ body.darkmode #gh-login-error {
     text-decoration: none !important;
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* --- COLORI --- */
 .gh-dash-tile.tile-wordle {
     background: linear-gradient(135deg, #3c096c 0%, #5a189a 100%);
     box-shadow: 0 8px 32px rgba(60, 9, 108, 0.3);
@@ -3095,7 +3093,6 @@ body.darkmode #gh-login-error {
     background: linear-gradient(135deg, rgba(157, 78, 221, 0.4), rgba(199, 125, 255, 0.2));
 }
 
-/* --- ICONE (Grandi e nell'angolo) --- */
 .gh-dash-icon i {
     position: absolute;
     right: -10px;
@@ -3113,10 +3110,9 @@ body.darkmode #gh-login-error {
     color: rgba(255, 255, 255, 0.25) !important;
 }
 
-/* --- TESTI (Forzati bianchi) --- */
 .gh-dash-label {
     font-family: 'Montserrat', sans-serif !important;
-    font-size: 17px; /* Leggermente ridotto per le 3 colonne */
+    font-size: 17px;
     font-weight: 800;
     color: #ffffff !important;
     text-transform: uppercase;
@@ -3147,19 +3143,14 @@ body.darkmode #gh-login-error {
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* --- HOVER --- */
 .gh-dash-tile:hover {
     transform: translateY(-5px) scale(1.02);
-    border-color: rgba(255, 255, 255, 0.4);
 }
 
-/* --- DARK MODE --- */
 body.darkmode .gh-dash-tile.tile-classifiche,
 body.darkmode .gh-dash-tile.tile-agenda {
     background: rgba(0, 0, 0, 0.3);
 }
-
-/* --- MOBILE --- */
 @media (max-width: 600px) {
     .gh-dash-container { 
         grid-template-columns: 1fr; 
