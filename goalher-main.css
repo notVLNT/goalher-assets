@@ -3060,102 +3060,65 @@ body.darkmode #gh-login-error {
 
 /* 21. PULSANTI INDEX */
 
+/* --- AGGIORNAMENTO GRID --- */
 .gh-dash-container {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+    /* Wordle leggermente ridotto, le altre due equilibrate */
+    grid-template-columns: 1.1fr 0.7fr 0.7fr; 
     gap: 16px;
 }
 
-.gh-dash-tile {
-    position: relative;
-    height: 100px;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 20px;
-    text-decoration: none !important;
-    overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-}
+/* --- COLORI RIVISTI --- */
+
+/* 1. WORDLE: Deep Purple (Protagonista) */
 .gh-dash-tile.tile-wordle {
-    background: linear-gradient(135deg, rgba(60, 9, 108, 0.85), rgba(123, 47, 190, 0.7));
+    background: linear-gradient(135deg, #3c096c 0%, #5a189a 100%);
     box-shadow: 0 8px 32px rgba(60, 9, 108, 0.3);
 }
+
+/* 2. CLASSIFICHE: Glass Viola scuro (Dati) */
 .gh-dash-tile.tile-classifiche {
-    background: rgba(255, 255, 255, 0.05); 
-    background: linear-gradient(135deg, rgba(90, 24, 154, 0.4), rgba(123, 47, 190, 0.2));
+    background: linear-gradient(135deg, rgba(90, 24, 154, 0.45), rgba(60, 9, 108, 0.25));
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.gh-dash-icon i {
-    position: absolute;
-    right: -10px;
-    bottom: -10px;
-    transform: rotate(-15deg);
-    font-size: 80px !important;
-    color: rgba(255, 255, 255, 0.12) !important;
-    transition: all 0.5s ease;
-    pointer-events: none;
+/* 3. AGENDA: Glass Lilla Soft (Informazione) */
+.gh-dash-tile.tile-agenda {
+    /* Un lilla più freddo, che non promette video ma informazione pulita */
+    background: linear-gradient(135deg, rgba(157, 78, 221, 0.4), rgba(199, 125, 255, 0.15));
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.gh-dash-tile:hover .gh-dash-icon i {
-    transform: rotate(0deg) scale(1.1);
-    color: rgba(255, 255, 255, 0.25) !important;
-}
-
-.gh-dash-label {
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 18px;
-    font-weight: 800;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 2px;
-}
-
+/* --- OTTIMIZZAZIONE TESTI --- */
 .gh-dash-sub {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    color: rgba(255, 255, 255, 0.7);
-    max-width: 70%;
-    line-height: 1.2;
+    max-width: 80%; /* Evitiamo che il testo finisca sotto l'icona nelle tile strette */
 }
 
-.gh-dash-badge {
-    background: #ffffff;
-    color: #3C096C;
-    padding: 3px 10px;
-    border-radius: 20px;
-    font-size: 10px;
-    font-weight: 800;
-    margin-top: 8px;
-    width: fit-content;
-    text-transform: uppercase;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
+/* --- EFFETTI HOVER --- */
 .gh-dash-tile:hover {
-    transform: translateY(-5px) scale(1.02);
-    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-4px) scale(1.01);
 }
 
-.gh-dash-tile.tile-wordle:hover {
-    box-shadow: 0 15px 40px rgba(123, 47, 190, 0.5);
-}
-
-body.darkmode .gh-dash-tile.tile-wordle {
-    background: linear-gradient(135deg, rgba(26, 0, 48, 0.9), rgba(60, 9, 108, 0.8));
-}
-
-body.darkmode .gh-dash-tile.tile-classifiche {
-    background: rgba(0, 0, 0, 0.2);
+.gh-dash-tile.tile-classifiche:hover, 
+.gh-dash-tile.tile-agenda:hover {
+    background: rgba(255, 255, 255, 0.12); /* Effetto schiarita al passaggio */
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 /* --- MOBILE --- */
 @media (max-width: 600px) {
-    .gh-dash-container { grid-template-columns: 1fr; }
-    .gh-dash-tile.tile-classifiche { display: none; }
-    .gh-dash-label { font-size: 20px; } 
+    .gh-dash-container { 
+        grid-template-columns: 1fr; /* Stack verticale */
+    }
+    .gh-dash-tile { height: 90px; }
+    .gh-dash-tile.tile-wordle { height: 110px; }
+    
+    /* Su mobile facciamo vedere bene il testo */
+    .gh-dash-sub { max-width: 75%; }
+}
+
+body.darkmode .gh-dash-tile.tile-classifiche,
+body.darkmode .gh-dash-tile.tile-agenda {
+    background: rgba(0, 0, 0, 0.25);
+    border-color: rgba(255, 255, 255, 0.05);
 }
