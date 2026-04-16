@@ -466,6 +466,11 @@ body.darkmode #page-footer { background-color: #120a1e !important; }
 body.darkmode div.award    { border-color: #C77DFF !important; }
 body.darkmode .gensmall a  { color: #C77DFF !important; }
 
+body.darkmode .member-block { background-color: #2a1a40; }
+body.darkmode .member-block a { color: #e0d8ee; }
+body.darkmode .member-block .member-details {color:#e0d8ee}
+body.darkmode .member-details .material-symbols-outlined {color:#e0d8ee}
+
 /* block-online dark mode */
 body.darkmode #block-online {
   background: #2a1a40 !important;
