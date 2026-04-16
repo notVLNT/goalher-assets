@@ -2482,7 +2482,7 @@ body.darkmode #breadcrumbs a + a::before {
   line-height: 1 !important;
 }
 
-.topic-actions-buttons {color: rgb(90,24,154)}
+.topic-actions-buttons i {color: rgb(90,24,154)}
 
 /* AddThis */
 .topic-actions #addthis-toolbar {
