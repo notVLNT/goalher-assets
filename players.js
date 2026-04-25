@@ -36,9 +36,8 @@ const PLAYERS = [
   { word: "RAMIREZ",     nationality: "Colombia",     club: "Chelsea" },
 
     // ── Danimarca ─────────────────────────────────────────────
-  { word: "BACH",        nationality: "Danimarca",    club: "Chelsea" },
-  { word: "GRAM",        nationality: "Danimarca",    club: "Manchester United" },
   { word: "HARDER",      nationality: "Danimarca",    club: "Bayern Monaco" },
+  { word: "KUHL",        nationality: "Danimarca",    club: "Atletico Madrid" },
   { word: "SVAVA",       nationality: "Danimarca",    club: "Lione" },
   { word: "THOGERSEN",   nationality: "Danimarca",    club: "Roma" },
   { word: "VANGSSGAARD", nationality: "Danimarca",    club: "Juventus" },
@@ -202,9 +201,10 @@ const PLAYERS = [
   { word: "SEMBRANT",    nationality: "Stati Uniti",  club: "AIK" },
 
   // ──   Svizzera ───────────────────────────────────────────────
-  { word: "BACHMANN",    nationality: "Svizzera",      club: "Chelsea" },
   { word: "CALLIGARIS",  nationality: "Svizzera",      club: "Juventus" },
+  { word: "LEHMANN",     nationality: "Svizzera",      club: "Leicester City" },
   { word: "PILGRIM",     nationality: "Svizzera",      club: "Roma" },
+  { word: "REUTELER",    nationality: "Svizzera",      club: "Eintracht Frankfurt" },
   { word: "SCHERTENLEIB",nationality: "Svizzera",      club: "Barcellona" },
   { word: "WALTI",       nationality: "Svizzera",      club: "Juventus" },
 
