@@ -18,6 +18,7 @@ const PLAYERS = [
   { word: "WULLAERT",    nationality: "Belgio",       club: "Inter"},
 
    // ── Brasile ───────────────────────────────────────────────
+  { word: "BORGES",      nationality: "Brasile",      club: "Angel City FC"},
   { word: "KEROLIN",     nationality: "Brasile",      club: "Manchester City" },
   { word: "MARTA",       nationality: "Brasile",      club: "Leggenda"},
 
@@ -98,11 +99,15 @@ const PLAYERS = [
   // ──   Irlanda ────────────────────────────────────────────────
   { word: "MCCABE",      nationality: "Irlanda",      club: "Arsenal" },
 
+  // ──   Islanda  ────────────────────────────────────────────────
+  { word: "JONSDOTTIR",  nationality: "Islanda",      club: "Angel City FC" },
+  { word: "RUNARSDOTTIR",nationality: "Islanda",      club: "Inter" },
+
   // ──   Italia ────────────────────────────────────────────────
   { word: "BARTOLI",     nationality: "Italia",       club: "Inter" },
   { word: "BECCARI",     nationality: "Italia",       club: "Juventus" },
   { word: "BERGAMASCHI", nationality: "Italia",       club: "Roma" },
-  { word: "BOATTIN",     nationality: "Italia",       club: "Juventus" },
+  { word: "BOATTIN",     nationality: "Italia",       club: "Houston Dash" },
   { word: "BONANSEA",    nationality: "Italia",       club: "Juventus" },
   { word: "BONFANTINI",  nationality: "Italia",       club: "Fiorentina" },
   { word: "CAMBIAGHI",   nationality: "Italia",       club: "Juventus" },
@@ -132,6 +137,9 @@ const PLAYERS = [
 
   // ──   Malawi   ──────────────────────────────────────────────
   { word: "CHAWINGA",    nationality: "Malawi",       club: "Lione" },
+
+  // ──   Messico   ──────────────────────────────────────────────
+  { word: "OVALLE",      nationality: "Messico",      club: "Orlando Pride" },
 
   // ──   Norvegia ──────────────────────────────────────────────
   { word: "ENGEN",       nationality: "Norvegia",     club: "Lione" },
@@ -177,15 +185,16 @@ const PLAYERS = [
 
   // ──  Stati Uniti ───────────────────────────────────────────
   { word: "DUNN",        nationality: "Stati Uniti",  club: "Portland Thorns FC" },
-  { word: "FOX",         nationality: "Stati Uniti",  club: "Arsenal" },
   { word: "GIRMA",       nationality: "Stati Uniti",  club: "Chelsea" },
   { word: "HEAPS",       nationality: "Stati Uniti",  club: "Denver Summit FC" },
   { word: "LAVELLE",     nationality: "Stati Uniti",  club: "NJ/NY Gotham FC" },
+  { word: "MACARIO",     nationality: "Stati Uniti",  club: "San Diego Wave" },
   { word: "MORGAN",      nationality: "Stati Uniti",  club: "Leggenda" },
   { word: "RAPINOE",     nationality: "Stati Uniti",  club: "Leggenda" },
   { word: "RODMAN",      nationality: "Stati Uniti",  club: "Washington Spirit" },
   { word: "THOMPSON",    nationality: "Stati Uniti",  club: "Chelsea" },
   { word: "YOHANNES",    nationality: "Stati Uniti",  club: "Lione" },
+  { word: "WILSON",      nationality: "Stati Uniti",  club: "Portland Thorns FC" },
 
     // ── Svezia ────────────────────────────────────────────────
   { word: "ANGELDAHL",   nationality: "Svezia",       club: "Real Madrid" },
@@ -208,5 +217,7 @@ const PLAYERS = [
   { word: "SCHERTENLEIB",nationality: "Svizzera",      club: "Barcellona" },
   { word: "WALTI",       nationality: "Svizzera",      club: "Juventus" },
 
+  // ──   Zambia  ───────────────────────────────────────────────
+  { word: "BANDA",       nationality: "Zambia",        club: "Orlando Pride" },
 
 ];
